@@ -1,1 +1,20 @@
+header {
+  background-color: #103F78;
+  height: 8em;
+}
 
+nav{
+  position: relative;
+  text-align: center;
+  /*padding: 5em 0em 2em 5em;*/
+}
+
+.main-background {
+  background-image: url("main_beer.jpg");
+  /*background-color: yellow;*/
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+}
