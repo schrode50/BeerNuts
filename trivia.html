@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starbucks Trivia</title>
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-  </body>
+  <div id='title'>Beer Trivia</div>
+  <h2><span id='intro'>Each question is worth one point.</br>To select your answer, click anywhere in the text area of that option.</br></br>Click the Start button to begin.</span></h2>
+<button id='start'>Start</button>
+  <div class='q-a'>
+    <h1><span class='q-a' id='question-num'></span></h2>
+    <h3><span class='q-a' id='question'></span></h3>
+    <h4><span class='q-a' id='answer1'></span></h4>
+    <h4><span class='q-a' id='answer2'></span></h4>
+    <h4><span class='q-a' id='answer3'></span></h4>
+    <h4><span class='q-a' id='answer4'></span></h4>
+  </div>
+<h1><span class='q-a' id='score-label'></span><span id='score'class='q-a'></span></h1>
+<div id='end'>Congratulations!!! You've scored <span id='final-score'></span> points.</div>
+</body>
+  <script src="js/trivia.js"></script>
 </html>
