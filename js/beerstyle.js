@@ -1,4 +1,5 @@
 var beerChosen = [];
+var images = ['ipa', 'amber'];
 
 function BeerStyle (beerName,abv,ibu,srm,beerDescription){
   this.beerName = beerName;
@@ -37,9 +38,21 @@ function beerDisplay(){
   var selUser = beerSelector.options[beerSelector.selectedIndex].value;
   for(var i=0; i<beerChosen.length; i++){
     if(beerChosen[i].beerName === selUser){
-      document.getElementById('beerInfo').textContent = beerChosen[i];
+      document.getElementById('bName').textContent = beerChosen[i].beerName;
+      document.getElementById('abv').textContent = beerChosen[i].abv;
+      document.getElementById('ibu').textContent = beerChosen[i].ibu;
+      document.getElementById('srm').textContent = beerChosen[i].srm;
+      document.getElementById('bDescription').textContent = beerChosen[i].beerDescription;
+      // document.getElementById('image').textContent = image[i];
+
       console.log(beerChosen[i]);
     }
   }
 }
 beerSelector.addEventListener('change', beerDisplay);
+
+(function buildAlbum() {
+  for (var i = 0; i < images.length; i++){
+    new BeerStyle('../imgs/' + images[i] + '.jpg');
+  }
+})();
