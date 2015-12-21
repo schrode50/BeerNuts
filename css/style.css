@@ -1,1 +1,60 @@
+body{
+  background-color: #0A2547;
+  color: #FFFAD5;
+  font-family: 'Century Gothic', sans-serif;
+}
 
+header {
+  height: 8em;
+}
+
+nav{
+  position: relative;
+  text-align: right;
+  padding: 5em 0em 2em 0em;
+  text-transform: uppercase;
+}
+
+.logo {
+  padding-top: 2em
+}
+
+.first-background {
+  background-image: url("../imgs/main_beer2.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 30em;
+}
+
+.first {
+  padding: 4em 0em;
+}
+
+.second-background {
+  background-image: url("../imgs/drink_local.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 30em;
+}
+
+.second {
+  padding: 4em 0em;
+}
+
+
+
+
+
+  /*SITING IMAGES :
+
+  Main_beer:
+  https://www.google.com/search?q=beer+local&biw=1428&bih=771&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiX5vP06u3JAhWoGqYKHR-QDUIQ_AUIBygC&dpr=0.9#q=beer+local&tbm=isch&tbs=isz:l&imgrc=aeRkUPGQjBFxNM%3A
+
+  Main_beer2:
+   https://www.google.com/search?q=beer+local&biw=1428&bih=771&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiX5vP06u3JAhWoGqYKHR-QDUIQ_AUIBygC&dpr=0.9#q=beer+local&tbm=isch&tbs=isz:l&imgrc=7dSgX1nfSRFcRM%3A*/
