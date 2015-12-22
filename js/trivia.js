@@ -18,23 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 });
 
-  document.getElementById('answer1').click(function() {
+  document.getElementById('answer1').addEventListener('click', (function() {
     answerQuestion(document.getElementById('answer1'), 3);
-  });
+  }));
 
-  document.getElementById('answer2').click(function() {
+  document.getElementById('answer2').addEventListener('click', (function() {
     answerQuestion(document.getElementById('answer2'), 4);
-  });
+  }));
 
-  document.getElementById('answer3').click(function() {
+  document.getElementById('answer3').addEventListener('click', (function() {
     answerQuestion(document.getElementById('answer3'), 5);
-  });
+  }));
 
-  document.getElementById('answer4').click(function() {
+  document.getElementById('answer4').addEventListener('click', (function() {
     answerQuestion(document.getElementById('answer4'), 6);
-  });
+  }));
 
-  function newQuestion(i, timeout) {
+  function newQuestion(i) {
     setTimeout(function () {
       console.log('am i in there ' + [i]);
       var ques1 = document.getElementById('question-num');
@@ -61,17 +61,17 @@ document.addEventListener("DOMContentLoaded", function() {
       var ansStr4 = document.createTextNode('D. ' + (questions[i][6]));
       ans4.appendChild(ansStr4);
       // document.getElementById('answer4').text("D. " + string(questions[i][6]));
-    }, timeout);
-  };
-  newQuestion();
+    })
+  }
+  newQuestion(i);
 
   function answerQuestion(answer, num) {
     console.log('answer question '+ [i]);
     if(questions[i][2] == questions[i][num]) {
-      highlight('correct', answer);
+      ('correct', answer);
       score++;
     } else {
-      highlight('incorrect', answer);
+      ('incorrect', answer);
     }
     if(i < questions.length -1) {
       console.log();
