@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       label.appendChild(newText);
     }
     addTextNode();
-  })
+  }),
 
   document.getElementById('answer1').click(function() {
     answerQuestion(document.getElementById('answer1'), 3);
