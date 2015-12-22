@@ -54,12 +54,14 @@ nav{
 .brews{
   width: 30em;
 
-
 }
 .local p{
   margin: auto;
 }
 
+.local {
+  margin-top: 2.2em;
+}
 .freemontinfo {
   width: 600px;
   margin-left: 10em;
