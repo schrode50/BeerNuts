@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Pick a Style</title>
-<link rel= 'stylesheet' href= 'css/normalize.css' type='text.css'>
-<link rel= 'stylesheet' href= 'css/skeleton.css' type='text.css'>
-<link rel= 'stylesheet' href= 'css/style.css' type='text.css'>
+    <link rel= 'stylesheet' href= 'css/normalize.css' type='text.css'>
+    <link rel= 'stylesheet' href= 'css/skeleton.css' type='text.css'>
+    <link rel= 'stylesheet' href= 'css/style.css' type='text.css'>
   </head>
   <body>
     <header>
-        <div class="row">
+        <div class="row twelve columns">
           <section class="logo four columns offset-by-one column">
             <h1> Beer Nuts </h1>
           </section>
@@ -22,44 +22,52 @@
 
         </div><!--end of row-->
     </header>
+    <section class="container">
 
-<section id='key'>
-  <h3>Key</h3>
-  <p>ABV: Alcohol By Volume.</p>
-  <p>IBU: Internation Bitterness Units, this refers to the bitter hop acid present in the beer </p>
-  <p>SRM: Standard Reference Method, this referes to the coloring of the beer from light 0 to dark 40.</p>
-</section>
+      <section class="row seven columns" id="bSelector">
+        <h3>What type of beer are you looking for?</h3>
+        <form id='beerSelector'>
+          <select name ='stylesofbeer' id = 'beerStyles'>
+            <option value = 'Pick a style'> Pick a style </option>
+            <option value = 'IPA'> IPA </option>
+            <option value = 'Amber'> Amber </option>
+            <option value = 'Pale'> Pale </option>
+            <option value = 'Hefe'> Hefe </option>
+            <option value = 'Stout'> Stout </option>
+            <option value = 'Blonde'> Blonde </option>
+            <option value = 'Brown'> Brown </option>
+            <option value = 'Dark'> Dark </option>
+            <option value = 'ESB'> ESB </option>
+            <option value = 'Light'> Light </option>
+          </select>
+        </form>
 
-<h3>What type of beer are you looking for?</h3>
-<form id='beerSelector'>
-<select name ='stylesofbeer' id = 'beerStyles'>
-  <option value = 'Pick a style'> Pick a style </option>
-  <option value = 'IPA'> IPA </option>
-  <option value = 'Amber'> Amber </option>
-  <option value = 'Pale'> Pale </option>
-  <option value = 'Hefe'> Hefe </option>
-  <option value = 'Stout'> Stout </option>
-  <option value = 'Blonde'> Blonde </option>
-  <option value = 'Brown'> Brown </option>
-  <option value = 'Dark'> Dark </option>
-  <option value = 'ESB'> ESB </option>
-  <option value = 'Light'> Light </option>
-</select>
-</form>
+        <section id = 'beerInfo'>
+          <ul>
+            <li id='bName'></li>
+            <li id='abv'></li>
+            <li id='ibu'></li>
+            <li id='srm'></li>
+          </ul>
+          <p id='bDescription'></p>
 
-<section id = 'beerInfo'>
-  <ul>
-    <li id='bName'></li>
-    <li id='abv'></li>
-    <li id='ibu'></li>
-    <li id='srm'></li>
-  </ul>
-  <p id='bDescription'></p>
+          <p id="image"></p>
+        </section>
 
-  <p id="image"></p>
+      </section><!--closing six columns-->
 
-</section>
+      <section class="row five columns">
+        <section id='key'>
+          <h3>Key</h3>
+            <p>ABV: Alcohol By Volume.</p>
+            <p>IBU: Internation Bitterness Units, this refers to the bitter hop acid present in the beer </p>
+            <p>SRM: Standard Reference Method, this referes to the coloring of the beer from light 0 to dark 40.</p>
+        </section>
+      </section><!--end of five columns row-->
 
-<script src = 'js/beerstyle.js'></script>
+      </section><!--closing row-->
+    </section><!--closing container-->
+
+      <script src = 'js/beerstyle.js'></script>
   </body>
 </html>
