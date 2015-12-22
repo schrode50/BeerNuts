@@ -53,9 +53,6 @@ header .row {
   padding: 4em 0em;
 }
 
-.freemontinfo {
-  background-color: white;
-}
 .jimmys {
   width: 30em;
   /*padding-left: 2.5em;*/
@@ -82,7 +79,6 @@ header .row {
   background-position: top;
   height: 38em;
 }
-
 .jimmysbackground {
   background-image: url("../imgs/BadJimmys.jpg");
   min-width: 100%;
