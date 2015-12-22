@@ -22,7 +22,7 @@ header .row {
 }
 
 .logo {
-  padding-top: 2em
+  padding-top: 2em;
 }
 
 .first-background {
@@ -69,21 +69,29 @@ header .row {
 .container {
   max-width: 1600px;
 }
+.info{
+  line-height:0em;
+  padding-top:2em;
+}
+.about {
+  padding-top:2em;
+}
 
 .fremontbackground {
   background-image: url("../imgs/freemontbrewing.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
 }
+
 .jimmysbackground {
   background-image: url("../imgs/BadJimmys.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -93,7 +101,7 @@ header .row {
   background-image: url("../imgs/georgetown.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -104,7 +112,7 @@ header .row {
   background-image: url("../imgs/ghostfish.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -114,7 +122,7 @@ header .row {
   background-image: url("../imgs/hilliards.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -125,7 +133,7 @@ header .row {
   background-image: url("../imgs/nakedcity.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -135,7 +143,7 @@ header .row {
   background-image: url("../imgs/twobeers.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -145,7 +153,7 @@ header .row {
   background-image: url("../imgs/pikebrew.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -155,7 +163,7 @@ header .row {
   background-image: url("../imgs/stoup.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
@@ -166,14 +174,18 @@ header .row {
   background-image: url("../imgs/MacJack.jpg");
   min-width: 100%;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   height: 38em;
 }
 
-
-
+#bSelector, #key{
+  padding-top:10em;
+}
+#beerStyles {
+  color:black;
+}
 
 
 
