@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beer Trivia</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/trivia.css">
   </head>
   <body>
-    <section id='container'>
+    <section class='container'>
 
       <header>
-          <div class="row">
+          <div class="row twelve columns">
+            <section class="logo four columns offset-by-one column">
+              <h1> Beer Trivia </h1>
+            </section>
 
-          <h1 id='title'>Beer Trivia</h1>
-            <section class="six columns offset-by-one columns">
               <nav>
                 <a href="index.html">Home </a> | <a href="beerstyle.html">Pick A Style </a>| <a href="location.html">Drink Local </a> | <a href="trivia.html">Beer Trivia </a>| <a href="aboutus.html">About Us </a>
               </nav>
-            </section>
+
 
           </div><!--end of row-->
       </header>
+    </section>
+
         <h2 id='intro'><span>Each question is worth one point.</br>To select your answer, click anywhere in the text area of that option.</br></br>Click the Start button to begin.</span></h2>
         <button id='start'>Start</button>
         <div id='questionList'>
@@ -33,7 +36,6 @@
             <h4 class='q-a' id='answer4'><span></span></h4>
         </div>
     </div>
-    </section>
 <h1 id='score-label'><span class='q-a'></span><span id='score'class='q-a'></span></h1>
 <div id='end'>Congratulations!!! You've scored <span id='final-score'></span> points.</div>
   <script src="js/trivia.js"></script>
