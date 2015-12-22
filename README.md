@@ -18,3 +18,12 @@ https://www.google.com/search?q=beer+local&biw=1428&bih=771&source=lnms&tbm=isch
 (this is the one currently being used)
 Main_beer2:
  https://www.google.com/search?q=beer+local&biw=1428&bih=771&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiX5vP06u3JAhWoGqYKHR-QDUIQ_AUIBygC&dpr=0.9#q=beer+local&tbm=isch&tbs=isz:l&imgrc=7dSgX1nfSRFcRM%3A*/
+
+Trivia Source
+
+
+http://247wallst.com/special-report/2014/07/01/states-that-drink-the-most-beer-3/3/
+
+http://theoatmeal.com/comics/beer
+
+http://www.funtrivia.com/html5/index.cfm?qid=15971
