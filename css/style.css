@@ -58,7 +58,6 @@ header .row {
   /*padding-left: 1em;*/
 
 }
-
 .local p{
   margin: auto;
 }
@@ -75,15 +74,16 @@ header .row {
   /*padding-left: 2.5em;*/
   /*padding-top: 3em;*/
 }
+
 .badJimmy {
   /*width: 40em;*/
 }
+
 /*.row p{
   margin auto;
 }*/
 .container {
   max-width: 1600px;
-}
 
 #key, #bSelector {
   padding-top: 10em;
