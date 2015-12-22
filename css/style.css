@@ -1,18 +1,20 @@
 body{
-  background-color: #0A2547;
+  background-color: #061930;
   color: #FFFAD5;
   font-family: 'Century Gothic', sans-serif;
-}
 
-header {
-  height: 8em;
 }
 
 nav{
-  position: relative;
   text-align: right;
   padding: 5em 0em 2em 0em;
   text-transform: uppercase;
+}
+
+header .row {
+  position: fixed;
+  background-color: #061930;
+  z-index: 1;
 }
 
 .whiteOut {
@@ -30,7 +32,7 @@ nav{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
-  height: 30em;
+  height: 38em;
 }
 
 .first {
@@ -44,28 +46,143 @@ nav{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
-  height: 30em;
+  height: 38em;
 }
 
 .second {
   padding: 4em 0em;
 }
 
-.brews{
-  width: 30em;
-
-}
-.local p{
-  margin: auto;
-}
-
-.local {
-  margin-top: 2.2em;
-}
 .freemontinfo {
-  width: 600px;
-  margin-left: 10em;
+  background-color: white;
 }
+.jimmys {
+  width: 30em;
+  /*padding-left: 2.5em;*/
+  /*padding-top: 3em;*/
+}
+
+.badJimmy {
+  /*width: 40em;*/
+}
+
+/*.row p{
+  margin auto;
+}*/
+.container {
+  max-width: 1600px;
+}
+
+.fremontbackground {
+  background-image: url("../imgs/freemontbrewing.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.jimmysbackground {
+  background-image: url("../imgs/BadJimmys.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.georgetownbackground {
+  background-image: url("../imgs/georgetown.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+
+.ghostfishbackground {
+  background-image: url("../imgs/ghostfish.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.hilliardsbackground {
+  background-image: url("../imgs/hilliards.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+
+.nakedcitybackground {
+  background-image: url("../imgs/nakedcity.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.twobeersbackground {
+  background-image: url("../imgs/twobeers.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.pikebrewingbackground {
+  background-image: url("../imgs/pikebrew.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.stoupbackground {
+  background-image: url("../imgs/stoup.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+
+.macandjacksbackground {
+  background-image: url("../imgs/MacJack.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+
+
+
+
+
+
+
 
 
 
