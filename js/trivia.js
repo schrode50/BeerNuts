@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var container = document.getElementById('container');//.remove();
     var start = document.getElementById('start');
     var intro = document.getElementById('intro');
-    // container.removeChild(start);
-    // container.removeChild(intro);
+    container.removeChild(start);
+    container.removeChild(intro);
     function addTextNode(text) {
       // var newText = document.createTextNode('Score : ');
       // label = document.getElementById('score-label');
