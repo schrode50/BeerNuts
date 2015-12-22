@@ -124,6 +124,7 @@ header .row {
   height: 38em;
 }
 
+
 .nakedcitybackground {
   background-image: url("../imgs/nakedcity.jpg");
   min-width: 100%;
@@ -163,6 +164,7 @@ header .row {
   background-position: top;
   height: 38em;
 }
+
 
 .macandjacksbackground {
   background-image: url("../imgs/MacJack.jpg");
