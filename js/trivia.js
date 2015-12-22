@@ -21,25 +21,25 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('answer2').click(function() {
-    answerQuestion(document.getElementById('answer1'), 4);
+    answerQuestion(document.getElementById('answer2'), 4);
   });
 
   document.getElementById('answer3').click(function() {
-    answerQuestion(document.getElementById('answer1'), 5);
+    answerQuestion(document.getElementById('answer3'), 5);
   });
 
   document.getElementById('answer4').click(function() {
-    answerQuestion(document.getElementById('answer1'), 6);
+    answerQuestion(document.getElementById('answer4'), 6);
   });
 
   function newQuestion(i, setTimeout) {
     setTimeout(function () {
-      document.getElementById('question-num').textContent(questions[i][0]);
-      document.getElementById('question').textContent(questions[i][1]);
-      document.getElementById('answer1').textContent("A. " + string(questions[i][3]));
-      document.getElementById('answer2').textContent("B. " + string(questions[i][4]));
-      document.getElementById('answer3').textContent("C. " + string(questions[i][5]));
-      document.getElementById('answer4').textContent("D. " + string(questions[i][6]));
+      document.getElementById('question-num').text(questions[i][0]);
+      document.getElementById('question').text(questions[i][1]);
+      document.getElementById('answer1').text("A. " + string(questions[i][3]));
+      document.getElementById('answer2').text("B. " + string(questions[i][4]));
+      document.getElementById('answer3').text("C. " + string(questions[i][5]));
+      document.getElementById('answer4').text("D. " + string(questions[i][6]));
     }, setTimeout);
   }
 
