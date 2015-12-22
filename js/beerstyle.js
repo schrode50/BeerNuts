@@ -1,19 +1,20 @@
 var beerChosen = [];
 
-function BeerStyle (beerName,abv,ibu,srm,beerDescription){
+function BeerStyle (beerName,abv,ibu,srm,imgs,beerDescription){
   this.beerName = beerName;
   this.abv = abv;
   this.ibu = ibu;
   this.srm = srm;
+  this.imgs = imgs;
   this.beerDescription = beerDescription;
   beerChosen.push(this);
 
 }
 
 
-var iPA = new BeerStyle ('IPA',"ABV: 6.3%-7.5%","IBU: 50-70","SRM: 6-14", "American-style India pale ales are perceived to have medium-high to intense hop bitterness, flavor and aroma with medium-high alcohol content. The style is further characterized by floral, fruity, citrus-like, piney, resinous, or sulfur-like American-variety hop character. Note that one or more of these American-variety hop characters is the perceived end, but the hop characters may be a result of the skillful use of hops of other national origins. The use of water with high mineral content results in a crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery hop aroma and may have a strong hop flavor (in addition to the perception of hop bitterness). India pale ales possess medium maltiness which contributes to a medium body. Fruity-ester flavors and aromas are moderate to very strong. Diacetyl can be absent or may be perceived at very low levels. Chill and/or hop haze is allowable at cold temperatures. (English and citrus-like American hops are considered enough of a distinction justifying separate American-style IPA and English-style IPA categories or subcategories. Hops of other origins may be used for bitterness or approximating traditional American or English character. See English-style India Pale Ale");
+var iPA = new BeerStyle ('IPA',"ABV: 6.3%-7.5%","IBU: 50-70","SRM: 6-14", "<img src='imgs/ipa.jpg'>", "American-style India pale ales are perceived to have medium-high to intense hop bitterness, flavor and aroma with medium-high alcohol content. The style is further characterized by floral, fruity, citrus-like, piney, resinous, or sulfur-like American-variety hop character. Note that one or more of these American-variety hop characters is the perceived end, but the hop characters may be a result of the skillful use of hops of other national origins. The use of water with high mineral content results in a crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery hop aroma and may have a strong hop flavor (in addition to the perception of hop bitterness). India pale ales possess medium maltiness which contributes to a medium body. Fruity-ester flavors and aromas are moderate to very strong. Diacetyl can be absent or may be perceived at very low levels. Chill and/or hop haze is allowable at cold temperatures. (English and citrus-like American hops are considered enough of a distinction justifying separate American-style IPA and English-style IPA categories or subcategories. Hops of other origins may be used for bitterness or approximating traditional American or English character. See English-style India Pale Ale");
 
-var amberAle = new BeerStyle ('Amber',"ABV: 4.5%-6%", "IBU: 30-40", "SRM: 11-18","American amber/red ales range from light copper to light brown in color. They are characterized by American-variety hops used to produce the perception of medium hop bitterness, flavor, and medium aroma. Amber ales have medium-high to high maltiness with medium to low caramel character. They should have medium to medium-high body. The style may have low levels of fruityester flavor and aroma. Diacetyl can be either absent or barely perceived at very low levels. Chill haze is allowable at cold temperatures. Slight yeast haze is acceptable for bottle-conditioned products.");
+var amberAle = new BeerStyle ('Amber',"ABV: 4.5%-6%", "IBU: 30-40", "SRM: 11-18", "American amber/red ales range from light copper to light brown in color. They are characterized by American-variety hops used to produce the perception of medium hop bitterness, flavor, and medium aroma. Amber ales have medium-high to high maltiness with medium to low caramel character. They should have medium to medium-high body. The style may have low levels of fruityester flavor and aroma. Diacetyl can be either absent or barely perceived at very low levels. Chill haze is allowable at cold temperatures. Slight yeast haze is acceptable for bottle-conditioned products.");
 
 var paleAle = new BeerStyle ('Pale',"ABV: 4.5%-5.6%", "IBU: 30-42", "SRM: 6-14", "American pale ales range from deep golden to copper in color. The style is characterized by fruity, floral and citrus-like American-variety hop character producing medium to medium-high hop bitterness, flavor, and aroma. Note that the 'traditional' style of this beer has its origins with certain floral, fruity, citrus-like, piney, resinous, or sulfur-like American hop varietals. One or more of these hop characters is the perceived end, but the perceived hop characters may be a result of the skillful use of hops of other national origins. American pale ales have medium body and low to medium maltiness. Low caramel character is allowable. Fruity-ester flavor and aroma should be moderate to strong. Diacetyl should be absent or present at very low levels. Chill haze is allowable at cold temperatures.");
 
@@ -37,9 +38,21 @@ function beerDisplay(){
   var selUser = beerSelector.options[beerSelector.selectedIndex].value;
   for(var i=0; i<beerChosen.length; i++){
     if(beerChosen[i].beerName === selUser){
-      document.getElementById('beerInfo').textContent = beerChosen[i];
+      document.getElementById('bName').textContent = beerChosen[i].beerName;
+      document.getElementById('abv').textContent = beerChosen[i].abv;
+      document.getElementById('ibu').textContent = beerChosen[i].ibu;
+      document.getElementById('srm').textContent = beerChosen[i].srm;
+      document.getElementById('bDescription').textContent = beerChosen[i].beerDescription;
+      document.getElementById('image').innerHTML = beerChosen[i].imgs;
+
       console.log(beerChosen[i]);
     }
   }
 }
 beerSelector.addEventListener('change', beerDisplay);
+
+// (function buildAlbum() {
+//   for (var i = 0; i < images.length; i++){
+//     new BeerStyle('../imgs/' + images[i] + '.jpg');
+//   }
+// })();

@@ -15,6 +15,10 @@ nav{
   text-transform: uppercase;
 }
 
+.whiteOut {
+  color: #0A2547;
+}
+
 .logo {
   padding-top: 2em
 }
