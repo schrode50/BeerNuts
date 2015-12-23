@@ -17,12 +17,10 @@ header .row {
   z-index: 1;
 }
 
-.whiteOut {
-  color: #0A2547;
-}
 
 .logo {
-  padding-top: 2em;
+  padding-top: 3em;
+  font-family: 'Pacifico', 'Lobster', cursive;
 }
 
 .first-background {
