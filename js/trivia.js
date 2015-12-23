@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-  var answer1= document.getElementById('answer1')
+  var answer1= document.getElementById('answer1');
   answer1.addEventListener('click',function() {
     answerQuestion(document.getElementById('answer1'), 3);
     answer1.textContent='';
