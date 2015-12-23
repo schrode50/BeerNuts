@@ -42,8 +42,10 @@ document.addEventListener("DOMContentLoaded", function() {
     answer2.textContent='';
     answer3.textContent='';
     answer4.textContent='';
-    ques1.textContent=' ';
-    ques2.textContent='';
+    // ques1.textContent=' ';
+    // ques2.textContent='';
+    nextQuestion.hidden = false;
+
 
   })
 
@@ -54,8 +56,10 @@ document.addEventListener("DOMContentLoaded", function() {
     answer2.textContent='';
     answer3.textContent='';
     answer4.textContent='';
-    ques1.textContent=' ';
-    ques2.textContent='';
+    // ques1.textContent=' ';
+    // ques2.textContent='';
+    nextQuestion.hidden = false;
+
   })
 
   var answer3 = document.getElementById('answer3')
@@ -65,8 +69,10 @@ document.addEventListener("DOMContentLoaded", function() {
     answer2.textContent='';
     answer3.textContent='';
     answer4.textContent='';
-    ques1.textContent=' ';
-    ques2.textContent='';
+    // ques1.textContent=' ';
+    // ques2.textContent='';
+    nextQuestion.hidden = false;
+
   })
 
   var answer4= document.getElementById('answer4')
@@ -76,9 +82,20 @@ document.addEventListener("DOMContentLoaded", function() {
     answer2.textContent='';
     answer3.textContent='';
     answer4.textContent='';
-    ques1.textContent=' ';
-    ques2.textContent='';
+    // ques1.textContent=' ';
+    // ques2.textContent='';
+    nextQuestion.hidden = false;
   })
+
+var nextQuestion = document.getElementById('next');
+nextQuestion.addEventListener('click', function(){
+  ques1.textContent=' ';
+  ques2.textContent='';
+
+}
+)
+
+
 
   function newQuestion(i) {
     setTimeout(function () {
