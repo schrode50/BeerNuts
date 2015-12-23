@@ -10,6 +10,12 @@ http://crosscut.com/2015/07/what-craft-beer-means-for-washingtons-economy/
 Ellyn's Trivia Questions Source:
 http://www.foodbeast.com/news/22-craft-beer-facts-you-can-toast-to/
 
+http://berghoffbeer.com/blog/what-does-the-color-of-your-beer-mean/
+http://drinks.seriouseats.com/2011/12/history-of-beer-in-seattle-rainier-georgetown-brewing.html
+http://uspolitics.about.com/od/biographies/fl/Who-Was-the-First-President-to-Brew-Beer-at-the-White-House.htm
+
+http://www.sciencedaily.com/releases/2010/02/100208091922.htm
+
 Images for Home Page:
 
 Main_beer:
