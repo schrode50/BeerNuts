@@ -1,0 +1,94 @@
+body{
+  background-color: #061930;
+  color: #FFFAD5;
+  font-family: 'Century Gothic', sans-serif;
+
+}
+
+nav{
+  text-align: right;
+  padding: 5em 0em 2em 0em;
+  text-transform: uppercase;
+}
+
+header .row {
+  position: fixed;
+  background-color: #061930;
+  z-index: 1;
+}
+
+.whiteOut {
+  color: #0A2547;
+}
+
+.logo {
+  padding-top: 2em;
+}
+
+.first-background {
+  background-image: url("../imgs/main_beer2.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.first {
+  padding: 4em 0em;
+}
+
+.second-background {
+  background-image: url("../imgs/drink_local.jpg");
+  min-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 38em;
+}
+
+.second {
+  padding: 4em 0em;
+}
+
+.location{
+  margin:3em auto;
+}
+.container {
+  max-width: 1600px;
+  padding-top:10em;
+}
+.row .info h6{
+  line-height:0em;
+  font-size:14px;
+  /*padding:.2em;*/
+  /*margin:.2em;*/
+}
+.row .info p{
+  margin-top:1em;
+  font-size:14px;
+}
+.row .info a {
+  font-size:14px;
+}
+
+.row .infoLeft h6 {
+  line-height:0em;
+  font-size:14px;
+  text-align: right;
+}
+
+.row .infoLeft p{
+  text-align: right;
+  margin-top:1em;
+  font-size:14px;
+}
+/*.row .infoLeft a {
+  text-align:right;
+  font-size: 14px;
+}*/
+.brews {
+  width:100%;
+}
