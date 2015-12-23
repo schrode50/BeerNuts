@@ -12,6 +12,8 @@ var ans3;
 var ansStr3;
 var ans4;
 var ansStr4;
+var explain;
+var expStr;
 var playAgain = document.getElementById('playAgain');
 
 
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     answer4.textContent='';
     // ques1.textContent=' ';
     // ques2.textContent='';
+    document.getElementById('explain').hidden = false;
     nextQuestion.hidden = false;
 
 
@@ -58,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     answer4.textContent='';
     // ques1.textContent=' ';
     // ques2.textContent='';
+    document.getElementById('explain').hidden = false;
     nextQuestion.hidden = false;
 
   })
@@ -71,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     answer4.textContent='';
     // ques1.textContent=' ';
     // ques2.textContent='';
+    document.getElementById('explain').hidden = false;
     nextQuestion.hidden = false;
 
   })
@@ -84,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     answer4.textContent='';
     // ques1.textContent=' ';
     // ques2.textContent='';
+    document.getElementById('explain').hidden = false;
     nextQuestion.hidden = false;
   })
 
@@ -124,6 +130,9 @@ nextQuestion.addEventListener('click', function(){
       ansStr4 = document.createTextNode('D. ' + (questions[i][6]));
       ans4.appendChild(ansStr4);
       // document.getElementById('answer4').text("D. " + string(questions[i][6]));
+      explain = document.getElementById('explain');
+      expStr = document.createTextNode('Fact. ' + (questions[i][7]));
+      explain.appendChild(expStr);
     })
   }
   newQuestion(i);
