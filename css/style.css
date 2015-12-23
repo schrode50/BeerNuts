@@ -53,40 +53,13 @@ header .row {
   padding: 4em 0em;
 }
 
-.jimmys {
-  width: 30em;
-  /*padding-left: 2.5em;*/
-  /*padding-top: 3em;*/
-}
-
-.badJimmy {
-  /*width: 40em;*/
-}
-
-/*.row p{
-  margin auto;
-}*/
-.container {
-  max-width: 1600px;
-}
-.info{
-  line-height:0em;
-  padding-top:2em;
-}
-.about {
-  padding-top:2em;
-}
-
-.fremont {
-  padding-top: 10em;
-  width: 30em;
-}
-.brews {
-  width: 30em;
-}
 
 
 
+
+
+
+/* Beer Styles CSS stuff*/
 
 #bSelector, #key{
   padding-top:10em;
@@ -94,7 +67,10 @@ header .row {
 #beerStyles {
   color:black;
 }
-.members {
+
+
+/* About us page*/
+/*.members {
   padding-top: 10em;
 }
 .aboutpic {
@@ -103,6 +79,8 @@ header .row {
 h4 {
   text-align: center;
 }
+
+
 
 /*flipping picture animations*/
 
@@ -220,7 +198,7 @@ h4 {
 	padding: 0 20px;
   font-family: arial;
   line-height: 2em;
-}
+}*/
 
 /*Flipping end*/
 
