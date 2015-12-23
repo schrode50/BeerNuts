@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beer Trivia</title>
-      <link rel="stylesheet" href="css/trivia.css">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/skeleton.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/trivia.css">
   </head>
   <body>
+    <header>
+        <div class="row twelve columns">
+          <section class="logo four columns offset-by-one column">
+            <h1> Beer Trivia </h1>
+          </section>
+          <section class='six columns offset-by-one columns'>
+            <nav>
+              <a href="index.html">Home </a> | <a href="beerstyle.html">Pick A Style </a>| <a href="location.html">Drink Local </a> | <a href="trivia.html">Beer Trivia </a>| <a href="aboutus.html">About Us </a>
+            </nav>
+          </section>
+        </div>
+    </header>
     <section class='container'>
-
-      <header>
-          <div class="row twelve columns">
-            <section class="logo four columns offset-by-one column">
-              <h1> Beer Trivia </h1>
-            </section>
-
-              <nav>
-                <a href="index.html">Home </a> | <a href="beerstyle.html">Pick A Style </a>| <a href="location.html">Drink Local </a> | <a href="trivia.html">Beer Trivia </a>| <a href="aboutus.html">About Us </a>
-              </nav>
-
-
-          </div><!--end of row-->
-      </header>
+      <div id='intro'>
+        <p>Each question is worth one point.</p>
+        <p>To select your answer, click anywhere in the text area of that option.</p>
+        <p>Click the Start button to begin.</p>
+      </div>
+      <button id='start'>Start</button>
+      <section class='row'>
+      <div id='questionList' class='ten columns offset-by-one'>
+        <div id='q-aList' class='q-a'>
+          <h1 class='q-a' id='question-num'></h1>
+          <h3 class='q-a' id='question'></h3>
+          <h4 class='q-a' id='answer1'></h4>
+          <h4 class='q-a' id='answer2'></h4>
+          <h4 class='q-a' id='answer3'></h4>
+          <h4 class='q-a' id='answer4'></h4>
+        </div>
+      </div>
+      <!-- <div class='six columns'><img src='imgs/Beer_Stein.jpg'></div> -->
+      <!-- <h1 id='score-label'><span class='q-a'></span><span id='score'class='q-a'></span></h1> -->
     </section>
 
-        <h2 id='intro'><span>Each question is worth one point.</br>To select your answer, click anywhere in the text area of that option.</br></br>Click the Start button to begin.</span></h2>
-        <button id='start'>Start</button>
-        <div id='questionList'>
-          <div id='q-aList' class='q-a'>
-            <h1 class='q-a' id='question-num'><span></span></h2>
-            <h3 class='q-a' id='question'><span></span></h3>
-            <h4 class='q-a' id='answer1'><span></span></h4>
-            <h4 class='q-a' id='answer2'><span></span></h4>
-            <h4 class='q-a' id='answer3'><span></span></h4>
-            <h4 class='q-a' id='answer4'><span></span></h4>
-        </div>
-    </div>
-<h1 id='score-label'><span class='q-a'></span><span id='score'class='q-a'></span></h1>
-<div id='end'>Congratulations!!! You've scored <span id='final-score'></span> points.</div>
+
+      <div id='end'><p>Congratulations!!! <br/> You've scored <span id='final-score'></span> points.</p></div>
+
+      <!-- <h1 id='score-label'><span class='q-a'></span><span id='score'class='q-a'></span></h1>
+      <div id='end' class='six columns'>Congratulations!!! You've scored <span id='final-score'></span> points.</div> -->
+    </section>
   <script src="js/trivia.js"></script>
 </body>
 </html>
